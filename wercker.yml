@@ -5,9 +5,12 @@ provision-atp:
     id: alpine
     cmd: /bin/sh
   steps:
-  - script:
-        name: "Show wecker config"
-        code: cat wercker.yml
+  - kubectl:
+      name: show pods status
+      server: $KUBERNETES_MASTER
+      token: $KUBERNETES_TOKEN
+      insecure-skip-tls-verify: true
+      command: get pods -o wide
 
 create-atp-instance:
   box:
