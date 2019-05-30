@@ -19,6 +19,4 @@ spec:
     licenseType: NEW
     freeFormTags:
       testtag: demo
-#   definedTags:
-#     your-tag-namespace:
-#       your-defined-key: some_value
+
