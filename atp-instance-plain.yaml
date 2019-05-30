@@ -10,7 +10,7 @@ spec:
   clusterServiceClassExternalName: atp-service
   clusterServicePlanExternalName: $SERVICE_PLAN
   parameters:
-    name: $DB_NAME
+    name: osb-$DB_NAME
     compartmentId: $COMPARTMENT_ID
     dbName: $DB_NAME
     cpuCount: 1
